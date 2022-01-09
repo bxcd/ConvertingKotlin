@@ -35,10 +35,10 @@ get/set not considered as funcs so converted to field/prop with internal accesso
 
 where replacing get func with prop, can expose immutable for internal mutable 
 * e.g. backing property
-* change fun getObjects(): List<Object>? { return objects} to:
-* private val _objects = mutableListOf<Objects>()
-*   val objects: List<Objects>	
-*     get() = _objects
+* change fun getObjects(): List<Object\>? { return objects } to:
+* private val _objects = mutableListOf<Objects\>()
+* val objects: List<Objects>	
+* get() = _objects
 
 extension functions/properties can be declared outside class for use in other contexts
 * as compared with static util methods/constants in java
@@ -56,8 +56,8 @@ var : declares a mutable instance
 typed objects may remove the type definition by including type in assigned instance
 
 e.g. 
-* val objectIds : MutableArrayList<Object> = ArrayList(objects.size)
-* val objectIds = ArrayList<Object>(objects.size)
+* val objectIds : MutableArrayList<Object\> = ArrayList(objects.size)
+* val objectIds = ArrayList<Object\>(objects.size)
 
 ### nullability
 
@@ -92,4 +92,3 @@ e.g.
 * do "$field1 $field2 ..." or "${object.field1} ${object.field2} ..." 
 
 & not field1 + " " + field2
-
