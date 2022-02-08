@@ -1,6 +1,6 @@
 # ConvertingKotlin
 
-A Google CodeLab at https://developer.android.com/codelabs/java-to-kotlin
+Used Java and Kotlin languages. Completed lesson in conjunction with Google Codelab. CodeLab documentation: https://developer.android.com/codelabs/java-to-kotlin
 
 ## personal notes
 
